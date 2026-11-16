@@ -1,0 +1,39 @@
+Implementa una aplicación web para gestionar los proyectos de diseño de un diseñador gráfico:
+
+Requerimientos Funcionales
+
+- Gestión de clientes: registro, edición, eliminación y listado.
+- Utilizar tarjetas visuales para cada proyecto y poder ver sus datos.
+- Considerar tipos de proyecto de diseño: anuncios publicitarios, campañas políticas, tarjetas de invitación, ofertas laborales, etc.
+- Para cada proyecto, considerar: id (guid), título, descripción corta, id de cliente, fecha de pedido, fecha de entrega, estado, costo total.
+- Los estados de un proyecto son: por iniciar, en progreso, finalizado, cancelado, se debe poder cambiar el estado de un proyecto.
+- Cada proyecto de diseño puede ser pagado en partes, por ejemplo: inicial, un pago intermedio y el pago final al entregar el trabajo.
+- Si el proyecto es cancelado, los pagos realizados hasta el momento no se devuelven, se deben poder visualizar para registro.
+- Añadir filtros para listar/buscar los proyectos de una forma más sencilla.
+- Incluir gráficos (en barra o pie) que indiquen el porcentaje de ganancias por tipo de diseño u otros que creas relevantes.
+
+Especificaciones Técnicas
+
+- Respeta los archivos que actualmente existen en la carpeta, son la plantilla, no los modifiques.
+- No modifiques el .gitignore existente.
+- Respeta los plugins definidos en vite.config.ts.
+- Utiliza LocalStorage como base de datos.
+- Tecnologías: HTML, CSS con Tailwind, Vue con TypeScript (tanto para el código funcional como para las pruebas unitarias).
+- Agregar modo light/dark con transiciones suaves.
+- Utilizar los iconos (svg y ico) que están en la carpeta public/, como iconos de la aplicación.
+- Diseño y visualización responsive.
+- Añadir efectos de transición utilizando animate.css.
+- Carpetas: components, composables, types, schemas, utils.
+- Ubicar las pruebas automatizadas en la carpeta 'tests' ubicada en la raíz del proyecto: tanto unitarias (con vitest) como E2E (con Playwright), reflejando la estructura de la carpeta 'src'.
+- Utiliza el package.json con los comandos base.
+- Instala y utiliza @nuxt/ui como librería de componentes.
+- Utilizar Zod como paquete para validación de schemas.
+- Instalar y utilizar eslint para validaciones.
+- Instalar y utilizar vite-plugin-vue-devtools.
+- Utiliza las últimas versiones (a la fecha de hoy) de los paquetes de Node.js necesarios, comprobando compatibilidad.
+- Usa el archivo .svg ubicado en public/ como logo del proyecto, también para la pestaña del navegador.
+- Como tipografía, utilizar 'Montserrat' de Google Fonts, a través de vite-plugin-webfont-dl.
+- Utiliza el valor dentro de .env como nombre de la app, utiliza esa variable de entorno, ya tienes env.d.ts.
+- Agregar README.md con toda la documentación técnica y funcional del proyecto.
+
+Construye todo el código fuente necesario.

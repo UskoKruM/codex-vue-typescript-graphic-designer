@@ -5,7 +5,7 @@ export const environmentSchema = z.object({
         .string()
         .trim()
         .min(1, "VITE_APP_NAME is required.")
-        .regex(/^[A-Za-z0-9_-]+$/, "VITE_APP_NAME contains unsupported characters.")
+        .regex(/^[\p{L}\p{N} _-]+$/u, "VITE_APP_NAME contains unsupported characters.")
 });
 
 export type Environment = z.infer<typeof environmentSchema>;
